@@ -23,9 +23,9 @@ from tabulate import tabulate
 df = pd.read_json("https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json")
 ```
 
-__Highlight the grand questions__
 
-## GRAND QUESTION 1
+
+## QUESTION 1
 
 Which airport has the worst delays? Discuss the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours.
 
@@ -33,8 +33,6 @@ Which airport has the worst delays? Discuss the metric you chose, and why you ch
 To determine the "worst" airport in terms of delays, I chose to use the metric of proportion of total flights delayed. This is a clear and concise way to measure the impact of delays on an airport's operations. In this case, SFO airport has a proportion of .26, meaning 26% of its flights are delayed. This high percentage indicates that SFO has a significant problem with flight delays and could be considered the "worst" in terms of this metric. It takes into account both the frequency and severity of delays, making it a comprehensive measure of an airport's performance. The lowest in this list was Salt Lake City with only 14% percent of its total flights being delayed.
 
 ```{python}
-#| label: GQ1
-#| code-summary: Read and format data
 
 
 # Replace NaN and -999 with NaN
@@ -72,16 +70,17 @@ print(df1)
 
 
 
-## GRAND QUESTION 2
+## QUESTION 2
 
 What is the best month to fly if you want to avoid delays of any length? Discuss the metric you chose and why you chose it to calculate your answer. Include one chart to help support your answer, with the x-axis ordered by month. (To answer this question, you will need to remove any rows that are missing the Month variable.)
 
 From the bar chart, the intent was to show the proportion of delayed flights to the months. The highest being the worst and the lowest being the best month to fly.
 
+
+
+
 ```{python}
-#| label: GQ2
-#| code-summary: Read and format data
-# Include and execute your code here
+
 df2 = df_clean
 mean_flights_total = df2["num_of_flights_total"].mean()
 mean_delays_total = df2["num_of_delays_total"].mean()
@@ -121,7 +120,7 @@ sorted_months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
 
 
 
-## GRAND QUESTION 3
+## QUESTION 3
 
 According to the BTS website, the “Weather” category only accounts for severe weather delays. Mild weather delays are not counted in the “Weather” category, but are actually included in both the “NAS” and “Late-Arriving Aircraft” categories. Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild). You will need to replace all the missing values in the Late Aircraft variable with the mean. Show your work by printing the first 5 rows of data in a table. Use these three rules for your calculations:__
 
@@ -140,8 +139,6 @@ Using this information, I created a bar chart to visually represent the total nu
 
 
 ```{python}
-#| label: GQ3
-#| code-summary: Read and format data
 
 
 # Include and execute your code here
@@ -182,7 +179,7 @@ df3.head()
 ```
 
 
-## GRAND QUESTION 4
+## QUESTION 4
 
 Using the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport. Discuss what you learn from this graph.
 
@@ -219,10 +216,6 @@ Fix all of the varied missing data types in the data to be consistent (all missi
 
 
 ```{python}
-#| label: GQ5
-#| code-summary: Read and format data
-# Include and execute your code here
-
 
 
 # Check of the null values in each column
