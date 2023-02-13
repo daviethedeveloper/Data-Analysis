@@ -2,19 +2,16 @@
 
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+As a software engineer, my purpose in analyzing this data set is to understand and uncover patterns and insights related to flight delays at different airports and months. The data set I am analyzing is a JSON file of flight information, which was obtained from https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json.
 
-{Provide a description of the data set that you are analyzing.  Include the link of where you obtained the data.}
-
-{Describe your purpose for writing this software to analyze the data.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the data set, the questions and answers, the code running and a walkthrough of the code.}
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Data Analysis Results
 
-{List the questions and the answers you found by doing this analysis.}
+For the first question, I used the metric of proportion of total flights delayed to determine the "worst" airport. This was done by grouping the data by airport and calculating the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours. The results showed that SFO airport had the highest proportion of delayed flights (26%) and could be considered the "worst" airport in terms of this metric.
+
+For the second question, I used the metric of proportion of delayed flights to determine the best month to fly in terms of avoiding delays. I removed any rows missing the Month variable, filled in missing values with the mean, and grouped the data by month. The results showed that the best month to fly to avoid delays was December, with the lowest proportion of delayed flights.
 
 # Development Environment
 
