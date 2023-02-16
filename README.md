@@ -14,8 +14,8 @@ For the first question, I used the metric of proportion of total flights delayed
 For the second question, I used the metric of proportion of delayed flights to determine the best month to fly in terms of avoiding delays. I removed any rows missing the Month variable, filled in missing values with the mean, and grouped the data by month. The results showed that the best month to fly to avoid delays was December, with the lowest proportion of delayed flights.
 
 # Development Environment
-
 {Describe the tools that you used to develop the software}
+
 
 {Describe the programming language that you used and any libraries.}
 
@@ -27,6 +27,4 @@ For the second question, I used the metric of proportion of delayed flights to d
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
+* For my future work on this project, my plan is to provide more of a visualization charts from my data
