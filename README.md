@@ -14,16 +14,13 @@ For the first question, I used the metric of proportion of total flights delayed
 For the second question, I used the metric of proportion of delayed flights to determine the best month to fly in terms of avoiding delays. I removed any rows missing the Month variable, filled in missing values with the mean, and grouped the data by month. The results showed that the best month to fly to avoid delays was December, with the lowest proportion of delayed flights.
 
 # Development Environment
-{Describe the tools that you used to develop the software}
 
+The software application I developed used several tools and programming languages to create a robust and efficient system. The primary programming language used was Python. To handle data manipulation and analysis, I used the Pandas library. For data visualization, I utilized the Altair library, which is a declarative statistical visualization library for Python. It enabled me to quickly create a variety of visualizations, including scatter plots, line charts, and bar charts, with just a few lines of code.
 
-{Describe the programming language that you used and any libraries.}
+In addition to these libraries, I also used the NumPy library, which is a fundamental package for scientific computing in Python. It provided an efficient way to perform mathematical operations on large datasets, which is essential when working with data.
 
-# Useful Websites
+Finally, I used the Visual Studio development environment to write and debug the code. Visual Studio is a powerful integrated development environment (IDE) that provides a range of tools for developing, testing, and debugging code.
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
