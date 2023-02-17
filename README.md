@@ -1,7 +1,5 @@
 # Data-Analysis
 
-# Overview
-
 As a software engineer, my purpose in analyzing this data set is to understand and uncover patterns and insights related to flight delays at different airports and months. The data set I am analyzing is a JSON file of flight information, which was obtained from https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json.
 
 
